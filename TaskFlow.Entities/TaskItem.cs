@@ -8,5 +8,6 @@ namespace TaskFlow.Entities
         public string Title { get; set; }
         public bool IsCompleted { get; set; }
         public DateTime CreatedDate { get; set; }
+
     }
 }
