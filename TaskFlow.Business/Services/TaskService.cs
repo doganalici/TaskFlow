@@ -33,7 +33,7 @@ namespace TaskFlow.Business.Services
             _taskRepository.Add(task);
         }
 
-        public List<TaskItem> GetTask()
+        public List<TaskItem> GetTasks()
         {
             return _taskRepository.GetAll();
         }
