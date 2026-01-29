@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Interfaces\ITaskRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\InMemoryTaskRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TaskFlow.Entities\TaskFlow.Entities.csproj">
