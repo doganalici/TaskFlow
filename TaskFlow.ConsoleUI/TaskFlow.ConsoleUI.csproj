@@ -49,5 +49,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TaskFlow.Business\TaskFlow.Business.csproj">
+      <Project>{330edf79-8e03-4b1a-b13f-4e78e523ce73}</Project>
+      <Name>TaskFlow.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskFlow.DataAccess\TaskFlow.DataAccess.csproj">
+      <Project>{3621040f-491a-4fcb-8cd2-6ad4ac74a661}</Project>
+      <Name>TaskFlow.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskFlow.Entities\TaskFlow.Entities.csproj">
+      <Project>{8a1c494d-a841-41c2-81be-0dbc11d0072f}</Project>
+      <Name>TaskFlow.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

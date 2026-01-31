@@ -47,5 +47,18 @@ namespace TaskFlow.Business.Services
         {
             _taskRepository.Delete(id);
         }
+
+        public bool CompleteTask(int id)
+        {
+            var task = _taskRepository.GetAll().FirstOrDefault(t => t.Id == id);
+
+            if (task == null)
+            {
+                return false;
+            }
+            task.IsCompleted = true;
+            _taskRepository.Update(task);
+            return true;
+        }
     }
 }
